@@ -76,7 +76,7 @@ Try adding this to your App:
 
 ## 📸 Preview
 
-![Preview of useRef and Form](preview.png)
+![Preview of useRef and Form Live Demo](https://react-js-core-concepts-wc5w.vercel.app/)
 
 ---
 

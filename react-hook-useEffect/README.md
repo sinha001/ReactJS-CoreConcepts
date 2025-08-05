@@ -83,6 +83,8 @@ You can dynamically change the `mode` via dropdowns or buttons to see how the in
 
 Here’s what a demo UI might look like:
 
+[Live Demo](https://react-js-core-concepts.vercel.app/)
+
 ```
 -----------------------------------------------
 | Without useEffect         | Function Calls  |
