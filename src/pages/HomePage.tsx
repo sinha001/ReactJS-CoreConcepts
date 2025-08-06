@@ -72,10 +72,10 @@ export default function HomePage() {
               size="lg"
               asChild
             >
-              <Link to="/">
+              {/*<Link to="/">*/}
                 <BookOpen className="w-5 h-5 mr-2" />
                 Start Learning
-              </Link>
+              {/*</Link>*/}
             </Button>
             <Button
               size="lg"
