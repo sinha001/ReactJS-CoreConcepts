@@ -79,7 +79,7 @@ npm run build
 
 ## 🎯 Project Structure
 
-\`\`\`
+```
 src/
 ├── components/ # Reusable UI components
 │ └── ui/ # shadcn/ui components
@@ -89,7 +89,7 @@ src/
 ├── types/ # TypeScript type definitions
 ├── lib/ # Utility functions
 └── App.tsx # Main application component
-\`\`\`
+```
 
 ## 🤝 Contributing
 
