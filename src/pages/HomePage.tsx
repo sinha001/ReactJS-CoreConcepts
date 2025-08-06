@@ -1,5 +1,5 @@
-import { Github, ExternalLink, Code, BookOpen, Zap, Users } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Github, Code, BookOpen, Zap, Users } from 'lucide-react';
+// import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Stat } from '@/types';
 
