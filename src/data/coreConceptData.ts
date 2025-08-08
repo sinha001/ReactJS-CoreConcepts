@@ -1,7 +1,5 @@
 import { CoreConcept } from '@/types';
 
-//Day2: core concept data..
-
 export const coreConceptData: CoreConcept[] = [
   {
     title: 'Components',
@@ -85,8 +83,19 @@ export const coreConceptData: CoreConcept[] = [
       'Master side effects, lifecycle methods replacement, and cleanup patterns.',
     difficulty: 'Intermediate',
     topics: ['Side Effects', 'Dependencies', 'Cleanup'],
-    vercelUrl: 'https://useeffect-concept.vercel.app',
+    vercelUrl: 'https://react-js-core-concepts.vercel.app/',
     color: 'from-violet-500 to-purple-500',
+    detailPath: '/concept/use-effect',
+  },
+  {
+    title: 'useRef & DOM Manipulation',
+    description:
+      'Use mutable refs to access DOM nodes and persist values without causing re-renders.',
+    difficulty: 'Intermediate',
+    topics: ['useRef', 'DOM Access', 'Mutable Values', 'Focus & Scroll'],
+    vercelUrl: 'https://react-js-core-concepts-wc5w.vercel.app/',
+    color: 'from-fuchsia-500 to-violet-500',
+    detailPath: '/concept/use-ref',
   },
   {
     title: 'Context API',

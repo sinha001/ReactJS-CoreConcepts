@@ -1,9 +1,8 @@
-import { Github, ExternalLink, Code, BookOpen, Zap, Users } from "lucide-react";
+import { Github, ExternalLink, Code, BookOpen, Zap, Users, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Stat } from "@/types";
 import { ForwardLink } from "@/components/ForwardLink";
-import { coreConceptData } from "@/data/coreConceptData";
 import { useDarkMode } from "@/hooks/useDarkMode";
 import {
   Card,
@@ -13,6 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
+import { coreConceptData } from "@/data/coreConceptData";
 
 const stats: Stat[] = [
   { label: "Core Concepts", value: "12+", icon: BookOpen },
@@ -191,9 +191,12 @@ export default function HomePage() {
                       </span>
                     ))}
                   </div>
-                  <Button
+                  
+                  {/*day 3 -- detail overview of topic with live demo view.. */}
+                  <div className="flex gap-2">
+                    <Button
                     asChild
-                    className="w-full bg-gradient-to-r from-gray-900 to-gray-700 hover:from-gray-800 hover:to-gray-600 dark:from-gray-100 dark:to-gray-300 dark:text-gray-900 dark:hover:from-gray-200 dark:hover:to-gray-400"
+                    className="flex-1 bg-gradient-to-r from-gray-900 to-gray-700 hover:from-gray-800 hover:to-gray-600 dark:from-gray-100 dark:to-gray-300 dark:text-gray-900 dark:hover:from-gray-200 dark:hover:to-gray-400"
                   >
                     <a
                       href={concept.vercelUrl}
@@ -204,6 +207,15 @@ export default function HomePage() {
                       View Live Demo
                     </a>
                   </Button>
+                  {concept.detailPath && (
+                    <Button asChild variant={"outline"} className="flex-1">
+                      <ForwardLink to={concept.detailPath}>
+                        <Info className="w-4 h-4 mr-2" />
+                        Details
+                      </ForwardLink>
+                    </Button>
+                  )}
+                  </div>
                 </CardContent>
               </Card>
             ))}
